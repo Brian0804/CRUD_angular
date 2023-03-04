@@ -1,0 +1,16 @@
+{
+   "list": [
+      {
+         "id": "1",
+         "bookName": "Book2",
+         "author": "Book 22222",
+         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQWSXHobQ8oV3qqIibJDRBURzL4HmEbdl0w&usqp=CAU"
+      },
+      {
+         "id": "2",
+         "bookName": "Book5",
+         "author": "Author5",
+         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQWSXHobQ8oV3qqIibJDRBURzL4HmEbdl0w&usqp=CAU"
+      }
+   ]
+}

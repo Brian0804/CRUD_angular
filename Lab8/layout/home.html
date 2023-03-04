@@ -1,0 +1,28 @@
+<div>
+    <a href="#book/add" class="btn btn-success">
+        <span>Add New Book</span></a>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>BOOK NAME</th>
+                <th>AUTHOR</th>
+                <th>IMAGE</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in list">
+                <td></td>
+                <td>{{item.id}}</td>
+                <td>{{item.bookName}}</td>
+                <td>{{item.author}}</td>
+                <td><img class="img-fluid" ng-src="{{item.image}}" alt=""></td>
+                <td>
+                    <a href="#book/edit/{{item.id}}">Update</a>
+                    <a href="#book/delete/{{item.id}}">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
