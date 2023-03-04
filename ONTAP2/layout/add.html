@@ -1,0 +1,57 @@
+<form class="row" name="frmStaff">
+   <div class="col-12 mb-3">
+      <label for="" class="form-label">ID:</label>
+      <input type="text" class="form-control" ng-model="staff.id" name="txtId" required>
+      <span class="text-danger" ng-show="frmStaff.txtId.$error.required">ID không để trống</span>
+   </div>
+
+   <div class="col-12 mb-3">
+      <label for="" class="form-label">NAME:</label>
+      <input type="text" class="form-control" ng-model="staff.name" name="txtName" required>
+      <span class="text-danger" ng-show="frmStaff.txtName.$error.required">Name không để trống</span>
+   </div>
+
+   <div class="col-12 mb-3">
+      <label for="" class="form-label">GENDER: </label>
+      <div class="form-check form-check-inline">
+         <input type="radio" class="form-check-input" id="nam" name="gender" ng-model="staff.gender" value="true"
+            required>
+         <label for="nam" class="form-check-label">Nam</label>
+      </div>
+
+      <div class="form-check form-check-inline">
+         <input type="radio" class="form-check-input" id="nu" name="gender" ng-model="staff.gender" value="false"
+            required>
+         <label for="nu" class="form-check-label">Nữ</label>
+      </div>
+
+      <div class="text-danger" ng-show="frmStaff.gender.$error.required">Gender phải được chọn</div>
+   </div>
+
+   <div class="col-12 mb-3">
+      <label for="" class="form-label">BIRTHDAY: </label>
+      <input type="date" class="form-control" ng-model="staff.birthday" name="txtBirthday" required>
+      <span class="text-danger" ng-show="frmStaff.txtBirthday.$error.required">Birthday phải được chọn</span>
+   </div>
+
+   <div class="col-12 mb-3">
+      <label for="" class="form-label">SALARY: </label>
+      <p>salary upto: {{staff.salary}} $</p>
+      <input type="range" min="100" max="200" class="form-control" ng-model="staff.salary" name="txtSalary">
+   </div>
+
+   <div class="col-12 mb-3">
+      <label for="" class="form-label">ROLE: </label>
+      <select class="form-select" ng-model="staff.role" name="txtRole" required>
+         <option value="1">admin</option>
+         <option value="2">manager</option>
+         <option value="3">user</option>
+      </select>
+      <span class="text-danger" ng-show="frmStaff.txtRole.$error.required">Role phải được chọn</span>
+   </div>
+
+   <div class="col-12 mb-3">
+      <button type="button" class="mx-auto btn btn-dark" ng-disabled="frmStaff.$invalid"
+         ng-click="onSubmit()">Submit</button>
+   </div>
+</form>

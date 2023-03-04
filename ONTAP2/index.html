@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ÔN TẬP</title>
+   <!-- Bootstrap -->
+   <link rel="stylesheet" href="./libs/bs523/css/bootstrap.min.css">
+   <script src="./libs/bs523/js/bootstrap.bundle.min.js"></script>
+   <!-- Angular JS -->
+   <script src="./libs/agl182/angular.min.js"></script>
+   <script src="./libs/agl182/angular-route.js"></script>
+   <!-- npx json-server --watch db.json -->
+</head>
+
+<body ng-app="myApp">
+   <div class="container">
+      <div class="row" ng-include="'./layout/header.html'"></div>
+      <div class="row" ng-view></div>
+      <div class="row bg-dark py-3" ng-include="'./layout/footer.html'"></div>
+   </div>
+</body>
+
+<script src="./assets/js/app.js"></script>
+
+</html>

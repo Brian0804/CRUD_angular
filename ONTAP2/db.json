@@ -1,0 +1,44 @@
+{
+   "list": [
+      {
+         "id": "1",
+         "name": "Duong",
+         "gender": "true",
+         "birthday": "2000-11-15",
+         "salary": 112,
+         "role": "1"
+      },
+      {
+         "id": "2",
+         "name": "Duong",
+         "gender": "true",
+         "birthday": "11-05-2000",
+         "salary": "112",
+         "role": "2"
+      },
+      {
+         "salary": 5500,
+         "id": "5",
+         "name": "gfdhgdhgfh",
+         "gender": "true",
+         "birthday": "2023-03-07",
+         "role": "1"
+      },
+      {
+         "salary": 178,
+         "id": "87878",
+         "name": "gfhgfhgfh",
+         "gender": "true",
+         "birthday": "2023-03-11",
+         "role": "3"
+      },
+      {
+         "salary": 177,
+         "id": "657657657",
+         "name": "gfdhgdhgfh",
+         "gender": "true",
+         "birthday": "2023-03-03",
+         "role": "2"
+      }
+   ]
+}

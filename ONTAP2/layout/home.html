@@ -1,0 +1,30 @@
+<div class="my-3">
+   <a class="btn btn-dark" href="#home/add">Add new Staff</a>
+</div>
+<table class="table table-hover my-3">
+   <thead class="bg-dark text-white">
+      <tr>
+         <th>ID</th>
+         <th>Name</th>
+         <th>Gender</th>
+         <th>Birthday</th>
+         <th>Salary</th>
+         <th>Role</th>
+         <th></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr ng-repeat="item in list">
+         <td>{{item.id}}</td>
+         <td>{{item.name}}</td>
+         <td>{{item.gender==="true"? "Nam":"Nữ"}}</td>
+         <td>{{item.birthday}}</td>
+         <td>{{item.salary}}</td>
+         <td>{{item.role==="1"?"admin":(item.role==="2"?"manager":"user")}}</td>
+         <td>
+            <a href="#home/edit/{{item.id}}">Update</a>
+            <a href="#home/delete/{{item.id}}">Delete</a>
+         </td>
+      </tr>
+   </tbody>
+</table>
